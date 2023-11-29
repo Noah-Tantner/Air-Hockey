@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Noah Tantner
+//29rd of November, 2023
+//This is a simple and loose digital recreation of the populer game "Air Hockey".
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -165,8 +168,8 @@ namespace Pong
             ball.Y += ballYSpeed;
 
 
-            //check if ball hit top or bottom wall and change direction if it does 
-            if (ball.Y < 0 || ball.Y > this.Height - ball.Height)
+            //check if ball hit  top or bottom  wall and change direction if it does 
+            if (ball.Y < 0 || ball.Y > Height - ball.Height)
             {
                 ballYSpeed *= -1;  // or: ballYSpeed = -ballYSpeed; 
             }
